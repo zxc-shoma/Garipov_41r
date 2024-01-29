@@ -1,0 +1,24 @@
+﻿<Window x:Class="Garipov41.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Garipov41"
+        mc:Ignorable="d"
+        Title="Garipov41" MinHeight="600" MinWidth="900" Icon="/res/icon.ico" FontFamily="Comic Sans MS">
+    <Grid>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Text="ООО 41 размер" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"  ></TextBlock>
+        <Button Name="Back" Content="Назад" HorizontalAlignment="Right" Click="Back_Click"></Button>
+        <Frame Grid.Row="1" Name="MainFrame" ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden"></Frame>
+
+        <Image Source="/res/logo.png" HorizontalAlignment="Left"></Image>
+
+        
+    </Grid>
+</Window>
