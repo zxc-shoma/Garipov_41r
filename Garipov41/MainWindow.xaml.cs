@@ -23,7 +23,7 @@ namespace Garipov41
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new ProductPage());
+            MainFrame.Navigate(new auth());
             manager.MainFrame = MainFrame;
 
         }

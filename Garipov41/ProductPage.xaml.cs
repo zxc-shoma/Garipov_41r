@@ -20,13 +20,41 @@ namespace Garipov41
     /// </summary>
     public partial class ProductPage : Page
     {
-        public ProductPage()
+        public ProductPage(User user)
         {
             InitializeComponent();
             var currentProduct = garipov41Entities.GetContext().Product.ToList();
             ProductListView.ItemsSource = currentProduct;
 
             Combo.SelectedIndex = 0;
+            
+
+            if (user != null)
+            {
+                FIOTb.Text = user.UserSurname + " " + user.UserName + " " + user.UserPatronymic;
+                switch (user.UserRole)
+                {
+                    case 1:
+                        RoleTb.Text = "Администратор"; break;
+
+                    case 2:
+                        RoleTb.Text = "Клиент"; break;
+
+                    case 3:
+                        RoleTb.Text = "Менеджер"; break;
+
+                }
+
+            }
+            else
+            {
+                RoleTb.Text = "Гость";
+                FIOTb.Text = "Гость";
+                
+                
+            }
+           
+
 
             Update();
         }
