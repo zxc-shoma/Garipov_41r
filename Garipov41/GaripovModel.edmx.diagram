@@ -4,16 +4,17 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="23be97eb31c24ede8855b69fdfb5a4a6" Name="Diagram1">
-        <EntityTypeShape EntityType="garipov41Model.Order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="garipov41Model.OrderProduct" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="garipov41Model.pickuppoint" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="garipov41Model.Product" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
-        <EntityTypeShape EntityType="garipov41Model.Role" Width="1.5" PointX="5.75" PointY="5.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="garipov41Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="garipov41Model.User" Width="1.5" PointX="8" PointY="5" IsExpanded="true" />
+      <Diagram DiagramId="ebc822a9a405478a9ff76c6b40748d8d" Name="Diagram1">
+        <EntityTypeShape EntityType="garipov41Model.Order" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="garipov41Model.OrderProduct" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="garipov41Model.pickuppoint" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="garipov41Model.Product" Width="1.5" PointX="5.25" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="garipov41Model.Role" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="garipov41Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="garipov41Model.User" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
         <AssociationConnector Association="garipov41Model.FK__OrderProd__Order__2D27B809" ManuallyRouted="false" />
         <AssociationConnector Association="garipov41Model.FK_Order_pickuppoint" ManuallyRouted="false" />
+        <AssociationConnector Association="garipov41Model.FK_Order_User" ManuallyRouted="false" />
         <AssociationConnector Association="garipov41Model.FK__OrderProd__Produ__2E1BDC42" ManuallyRouted="false" />
         <AssociationConnector Association="garipov41Model.FK__User__UserRole__2F10007B" ManuallyRouted="false" />
       </Diagram>

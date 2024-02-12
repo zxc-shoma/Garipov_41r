@@ -12,22 +12,23 @@ namespace Garipov41
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+
     public partial class garipov41Entities : DbContext
     {
+        private static garipov41Entities _context;
+        public static garipov41Entities GetContext()
+        {
+            if ( _context == null )
+                _context = new garipov41Entities();
+            return _context;    
+        }
+
+
         public garipov41Entities()
             : base("name=garipov41Entities")
         {
         }
-        private static garipov41Entities _context;
-
-        public static garipov41Entities GetContext()
-        {
-            if (_context == null)
-                _context = new garipov41Entities();
-            return _context;
-        }
-
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
